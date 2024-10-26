@@ -49,3 +49,55 @@
     isolation: isolate;
   }
 
+/* form container */
+#form-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* left visual */
+#left-visual{
+  background: url(media/visual.png) no-repeat;
+  background-size: cover;
+  background-position: right;
+  max-width: 350px;  
+  flex-basis: 200px;
+  flex: 1;  
+}
+
+.logo{
+  position: relative;
+  margin: 100px 0px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.logo > img{
+  display: block;
+  margin: 20px auto;
+  height: 80px;
+}
+
+/* main-form */
+#main-form{
+  display: flex;  
+  flex-direction: column;
+  height: 100vh;  
+  flex: 1;  
+}
+  
+form{
+  display: flex; 
+  flex-direction: column;   
+  flex: 1;  
+}
+
+form > *{
+  flex: 1;
+}
+
+fieldset{
+  display: inline-block;
+  width: 100%;
+}
+
